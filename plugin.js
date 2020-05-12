@@ -13,7 +13,7 @@
   var slugify = require("slugify");
 
   function convert(url) {
-    var slug = url.toLowerCase();
+    var slug = url.toString().toLowerCase();
 
     if (slug.match(/\/(.*)/)) {
       var content = slug.replace(/(.+\/)(.*)$/, "$2");
